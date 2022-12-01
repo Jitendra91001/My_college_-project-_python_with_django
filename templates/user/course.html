@@ -1,0 +1,66 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 bg-light">
+        <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <img src="{% static 'image/jitendra.jpg'%}" class="img-fluid rounded-start w-100" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">Computer Science & Engneering</h5>
+        <p class="card-text">
+            <b>HOD :</b>Mr. Upendra Kumar<br>
+            <b>Available Seat :-</b> 50<br/>
+            <b>Course Duration :-</b> 3 Year<br/>
+            <b>Fee (Per/Year ):-</b>40000/- Rs<br/>
+            Description<br/> 
+
+        </p>
+        <p class="card-text"><small class="text-muted">Added Date : </small></p>22/11/2021
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+
+
+
+ <!-- <div class="row">
+  <div class="h2 text-center text-light">Our<b class="text-warning">Branch
+        <i class="fa fa-image"></i></b></div>
+   <div class="col-sm-1"></div>
+   <div class="col-sm-10">
+       <div class="row">
+           {% if c %}
+           {% for x in c %}
+           <div class="col-sm-3 p-3 bg-dark">
+               <div class="card w-100 bg-dark">
+  <img src="/{{x.cpic}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h6 class="text-light bg-dark">Course Name:<span class="text-warning">{{x.cname}}</span></h6>
+      <a href="" style="text-decoration:none;"><h6 class="text-light">Branch Name:</a><span class="text-warning">{{x.branch}}</span></h6>
+    <h6 class="text-light">Eligibility of Course:<span class="text-warning">{{x.cadmission}}</span></h6>
+    <h6 class="text-light">Course Duration:<span class="text-warning">{{x.cduration}}</span></h6>
+    <h6 class="text-light">Course Seat:<span class="text-warning">{{x.cseat}}</span></h6>
+    <h6 class="text-light">Totol Fee:<span class="text-warning">{{x.ctotal}}</span></h6>
+    <h6 class="text-light">Course Description:<span class="text-warning">{{x.cdescription}}</span></h6>
+    <h6 class="text-light">H.O.D;s Name:<span class="text-warning">{{x.chead}}</span></h6>
+  </div>
+</div>
+
+           </div>
+           {% endfor%}
+           {%endif%}
+       </div>
+   </div>
+   <div class="col-sm-1"></div>
+    </div>-->
+{% endblock%}

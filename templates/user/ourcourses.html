@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+<style>
+    img:hover
+    {
+    border-radius:10px solid green;
+    transform:scale(1.1 );
+    }
+</style>
+<div class="row">
+    <div class="col-sm-1 text-warning text-center fs-4 pt-2" style="min-height:50px; width:100%;">OUR COURSES</div>
+    <div class="col-sm-11" style="min-height:350px; width:100%;">
+        <div class="row p-4 ps-3" style="min-height:350px;">
+            {% if course %}
+            {% for x in course %}
+            <div class="col-sm-4">
+                <div class="card w-100">
+  <img src="/{{x.coursepic}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a href="#" class="btn btn-primary text-center">{{x.coursename}}</a>
+  </div>
+
+</div>
+
+
+            </div>
+            {% endfor %}
+            {% endif %}
+  </div>
+</div>
+            </div>
+{% endblock %}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"/>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <style>
+     .t
+     {
+     min-height:35px;
+     color:white;
+     }
+     .ic
+     {
+     color:white;
+     border:1px solid aqua;
+     height:30px;
+     width:30px;
+     padding:1px;
+     border-radius:2px;
+     }
+     .ic:hover
+     {
+     background:pink;
+     color:red;
+     transition:all ease 2s;
+     transform:rotate(180deg)
+     }
+     .header1
+     {
+     min-height:90px;
+     }
+     .menu
+     {
+     background:black;
+     min-height:45px;
+     color:white;
+
+     }
+     .menu ul li:hover
+     {
+     background:#003a63;
+     transition:all ease 2s;
+     box-shadow:0px 0px 10px blue;
+
+     }
+     #menu ul li a
+     {
+     color:white;
+
+     }
+     .slider
+     {
+     min-height:300px;
+     }
+     .f
+     {
+     min-height:400px;
+     }
+     .f img:hover
+     {
+    transform:scale(1.08);
+    box-shadow:0px 0px 10px black;
+
+     }
+     .f1
+     {
+     min-height:80px;
+     width:100%;
+     }
+     .f2
+     {
+     min-height:320px;
+     width:100%;
+     }
+     .f2a
+     {
+     min-height:320px;
+
+     }
+     .fr
+     {
+     min-height:400px;
+     }
+      .fr img:hover
+     {
+    transform:scale(1.08);
+    box-shadow:0px 0px 10px black;
+
+     }
+     .fra
+     {
+     min-height:50px;
+     width:100%;
+     }
+     .frb
+     {
+     min-height:350px;
+     width:100%;
+     }
+     .c
+     {
+     min-height:350px;
+     }
+
+     .recruiter
+     {
+     min-height:450px;
+     }
+     .recruiter1
+     {
+     min-height:50px;
+     }
+     .recruiter2
+     {
+     min-height:400px;
+     }
+     .bfooter
+     {
+     min-height:40px;
+     margin-top:1px;
+     background:#5c9748;
+     }
+     .w
+     {
+     min-height:110px;
+     width:100%;
+     }
+    </style>
+</head>
+<body>
+<div class="container-fluid outer" style="background:#003a63;">
+    <div class="row t" style="background:#031f33;">
+        <div class="col-sm-6 text-light pt-1 ps-5"><span class="fa fa-home"></span>WELCOME TO </div>
+        <div class="col-sm-6 text-light pt-1">Affilated.BTEUP| &nbsp Affilated No.3657576| &nbsp College Code:4433 | &nbsp Public Desclosure | &nbsp Feedback</div>
+
+    </div>
+    <div class="row header1 py-2">
+        <div class="col-sm-4 text-light text-center fs-4 pt-3">PRASAD POLYTECHNIC JAUNPUR</div>
+        <div class="col-sm-8">
+            <div class="row" style="min-height:90px;">
+                <div class="col-sm-4 text-light text-center pt-3"><spna class="fa fa-street-view  fs-4 me-2"></spna><b>Location</b> <br> JAUNPUR .UP</div>
+                <div class="col-sm-4 text-light text-center pt-3"><span class="fa fa-phone fs-4 me-2"></span>Call Us<br>9918078367</div>
+                <div class="col-sm-4 text-light text-center pt-3"><span class="fa fa-home fs-4 me-2"></span>Mail Us<br>jitendrayadav91001@gmail.com</div>          </div>
+        </div>
+
+    </div>
+    <div class="row  menu" style="background:#031f33;">
+        <div class="col-sm-12" style="padding-left:150px;">
+            <!-- Start menu-->
+           <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/home/">Home</a>
+       </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/about/">About Us</a>
+        </li>
+
+           <li class="nav-item">
+          <a class="nav-link" href="/user/contactus/"></i>Contct us</a>
+                      </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/ourcourses/"></i>Our Course</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/course/">Branch fee &seat details</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/placements/">Our Placements</a>
+        </li>
+
+
+                <li class="nav-item">
+          <a class="nav-link" href="/user/recruiters/"></i>Recruiters</a>
+        </li>
+                 <li class="nav-item">
+          <a class="nav-link" href="/user/gallery/"></i>Gallery</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="/admin/"></i>Admin Login</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+            <!-- end menu-->
+        </div>
+    </div>
+           {% block content %}
+           {% endblock %}
+
+
+        <div class="row footer" style="background:#031f33">
+            <div class="col-sm-4 footer" style="padding-top:90px; padding-left:20px;">
+                <a class="text-light" href="#" style="text-decoration:none">Careers</a><br>
+                <br>
+                <a class="text-light" href="#" style="text-decoration:none">Emrgencies &Alert</a><br>
+                <br>
+                <a class="text-light" href="#" style="text-decoration:none">Library</a><br>
+                <br>
+                <a class="text-light" href="#" style="text-decoration:none">Middle</a><br>
+                <br>
+                <a class="text-light" href="#" style="text-decoration:none">Bookstore</a><br>
+                <br>
+                <a class="text-light" href="#" style="text-decoration:none">Disclaimer</a><br>
+
+            </div>
+            <div class="col-sm-4 footer" style="background:#031f33">
+                <h4 style="color:blue;padding-top:80px;">Contact Us</h4>
+                <br>
+                <h5 style="color:white">PRASAD POLYTECHNIC JAUNPUR</h5>
+                <h6 style="color:white">212242, PUCHANTIYA JAUNPUR 
+                  CHAUNKIYA KE PASS
+                <br>
+                </h6>
+                    <br>
+                    <br>
+                <h5 style="color:white">UNDERTWELEVE ADMISSION</h5>
+                <h6 style="color:white">admission @showard.edu
+                Toll Free:1800889790
+                    <br>
+                    Phone:9918078367,9918078367
+                    <br>
+                    Fax:230-345-4567
+                </h6>
+
+            </div>
+            <div class="col-sm-4 footer" style="padding-top:80px; background:#031f33;">
+                <img src="{% static 'image/cool.jpg' %}" style="height:100px; width:400px;"/>
+            <br>
+            <br>
+
+<h6 style="color:white">UNDERTENTH ADMISSION<br>
+    <br>
+admission @showard.edu
+    <br>
+    Toll Free:1800889790
+    <br>
+Phone:9918078367,
+    <br>9918078367</h6>
+
+            </div>
+
+        </div>
+        <div class="row bfooter text-center py-2 text-light" style="background:#000b22">
+            <div class="col-sm-6 text-warning">
+            <h3 style="text-shadow:0px 0px 10px white;">DEVELOPED BY JITENDRA YADAV</h3>
+        </div>
+            <div class="col-sm-6 text-warning">
+                <h6 style="padding-top:10px; text-shadow:0px 0px 5px white;"> &copy PRASAD POLYTECHNIC JAUNPUR</h6>
+            </div>
+        </div>
+</body>
+</html>

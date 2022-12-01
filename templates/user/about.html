@@ -1,0 +1,91 @@
+{%extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="row" style="background:#003a63;min-height:400px;width:100%;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 text-center text-warning fs-4">ABOUTUS
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="{% static 'image/aaa1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'image/about.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'image/aaa3.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<div class="row a" style="min-height:400px;width:100%; background:#003a63;">
+  <div class="col-sm-8 text-light">
+
+Prasad Polytechnic is a Private Diploma College located in the district of jaunpur, Uttar Pradesh state of India. <br>This polytechnic college
+    is located at<br> the bank of  River Gomati jaunpur city.
+
+In the era of economic realization and globalization, <br>the Indian economy is moving ahead rapidly approaching towards the global leading economy.<br>
+    The infra-structural changes and changing competitive Industrial environment in India, <br>is undoubtedly emphasizing the importance of professional and
+    skilled persons in each and every sector of Indian economy. <br> It is approvied By the All India council for technical education. <br>Prasad Polytechnic
+    jaunpur Affilated to Uttar Pradesh board of technical education.
+    India provide enough opportunities to the aspirants to equip with Management skill and IT expertise.
+
+prasad polytechnic jaunpur estaiblished in 2002. Ppj offers Courses <br> electical Engineering, <br>Civil Engineering, <br>Computer Science and Engineering,<br>
+    with recognized standards of excellence.
+<br>PPJ is private type college which was owned by Chairman <mark>B.P. Yadav</mark><br>
+ 
+<span class="text-warning fs3">Short Term Objectives:-</span>
+<br>
+1. To increase the knowledge base of the students.
+    <br>
+2. To develop the overall personality and competence of the students
+    <br>
+3. To produce managers and technocrats of international level.
+    <br>
+4. Initiating entrepreneurship development programs for students.
+    <br>
+5. Faculty development and staff training to be taken up as highest priority for improvement in quality of education.
+    <br>
+6. To collaborate with other Institutes and Industries with a view for professionalizing a management and technical education.
+    <br>
+7. To develop a placement cell
+  </div>
+  <div class="col-sm-4 pt-2">
+      <img src="{% static 'image/clg6.jpg' %}" class="d-block w-100" alt=""/>
+
+      <br>
+      <br>
+      <h4 class="text-warning">Prasad polytchnic jaunpur</h4>
+  </div>
+</div>
+
+{% endblock %}

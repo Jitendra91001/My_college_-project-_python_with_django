@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+<div class="row">
+    <div class="h2 text-center text-light">OUR<b class="text-warning">Recruiters
+        <i class="fa fa-image"></i></b></div>
+   <div class="col-sm-1"></div>
+   <div class="col-sm-10">
+       <div class="row">
+           {% if r%}
+           {% for x in r%}
+           <div class="col-sm-3 p-3">
+               <div class="card w-100">
+  <img src="/{{x.rpic}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a href="#" class="btn btn-outline-warning w-100">{{x.rdate}}</a>
+  </div>
+</div>
+
+           </div>
+           {% endfor%}
+           {%endif%}
+       </div>
+   </div>
+   <div class="col-sm-1"></div>
+    </div>
+{% endblock%}
